@@ -1,19 +1,6 @@
 Rails.application.routes.draw do
-  get 'users/new'
-
-  get 'pages/link'
-
-  get 'pages/index'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
-end
+  get 'pages/help'
 
-Rails.application.routes.draw do
-  get 'users/new'
-
-  get 'pages/link'
-
-  root 'pages#index'
-  get 'pages/link'
+  resources :users
 end
