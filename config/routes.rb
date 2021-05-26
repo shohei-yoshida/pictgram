@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'pages/link'
 
   get 'pages/index'
@@ -8,6 +10,8 @@ Rails.application.routes.draw do
 end
 
 Rails.application.routes.draw do
+  get 'users/new'
+
   get 'pages/link'
 
   root 'pages#index'
